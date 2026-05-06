@@ -154,11 +154,15 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  
 }
+
+
 
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .header .logo h1 {
@@ -168,6 +172,7 @@ h6 {
   color: var(--heading-color);
   letter-spacing: 2px;
   text-transform: uppercase;
+  mix-blend-mode: multiply;
 }
 
 .header .btn-getstarted,
@@ -892,8 +897,13 @@ section,
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
   color: var(--default-color);
   font-weight: 600;
+  background-color: transparent;
+
+
 }
 
 .hero .btn-watch-video i {
@@ -1200,8 +1210,11 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
-  margin-bottom: 10px;
+.services .service-item img {
+  width: 60px;  
+  height: auto;
+  display: block;
+  margin: 0 0 15px; 
 }
 
 .services .service-item .icon i {
@@ -2135,6 +2148,13 @@ section,
   height: 100%;
 }
 
+.contact .info-wrap iframe{
+  width: 100%;
+  height: 300px; /* bebas, sesuaikan */
+  border: 0;
+  display: block;
+}
+
 @media (max-width: 575px) {
   .contact .info-wrap {
     padding: 20px;
@@ -2184,6 +2204,12 @@ section,
   border-top: 3px solid var(--accent-color);
   border-bottom: 3px solid var(--accent-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe{
+  width: 10%;
+  height: 10px; /* bebas, sesuaikan */
+  border: 0;
 }
 
 @media (max-width: 575px) {
